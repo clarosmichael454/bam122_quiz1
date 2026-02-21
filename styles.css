@@ -1,0 +1,41 @@
+/* 1. Header Styling */
+.header-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-bottom: 2px solid #333;
+    margin-bottom: 40px; /* Combined from both your definitions */
+}
+
+/* 2. Instructions Styling */
+.instructions {
+    max-width: 800px; 
+    margin: 10px auto; /* This centers the block horizontally */
+    line-height: 1.6;
+}
+
+/* 3. Question Grid Styling */
+/* I've kept the Flexbox version as it is more responsive for images */
+.series-questions {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 30px; /* Increased gap for better visual breathing room */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* 4. Image/Button Styling */
+.series-questions img {
+    border-radius: 10px;
+    transition: transform 0.2s;
+    /* Removing fixed width/height here lets the HTML attributes or 
+       CSS handle it, but ensuring they don't overflow is good */
+    max-width: 100%; 
+    height: auto;
+}
+
+.series-questions img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
